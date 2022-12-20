@@ -145,6 +145,7 @@ func (jrp *JsonRuleProcessor) WriteTo(outputFileLocation string) error {
 }
 
 func main() {
+	flag.Parse()
 	jrp := &JsonRuleProcessor{}
 	var err error
 	err = jrp.ProcessRule(*threeColumnRuleFilepath, threeColumnRule)
